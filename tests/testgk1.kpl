@@ -1,0 +1,19 @@
+PROGRAM GIUAKY (* TIM MAX TRONG MANG SO NGUYEN *);
+
+VAR     X : INTEGER;
+        N : INTEGER;
+        I : INTEGER;
+        MAX : INTEGER;
+
+BEGIN
+    N := READI;
+    FOR I := 1 TO N DO
+    BEGIN
+        X := READI;
+        IF I = 1 THEN MAX := X ELSE 
+        BEGIN
+            IF MAX < X THEN MAX := X;
+        END;
+    END;
+    CALL WriteI(MAX);
+END.
